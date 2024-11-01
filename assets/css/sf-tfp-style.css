@@ -1,0 +1,337 @@
+/**
+ * @package WordPress
+ * @subpackage Tigris Flexplatform
+ */
+@charset "UTF-8";
+/** Services */
+#vacancy-load {
+	clear: both;
+	font-size: 14px;
+	letter-spacing: 3px;
+	padding: 10px 30px;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+}
+#vacancy-load span {
+	text-transform: uppercase;
+	text-align: center;
+}
+/** Vacancies category */
+.vacancies-page__block {
+	width: 100%;
+	margin: auto;
+	padding: 40px 15px;
+}
+
+.vacancies-page__title .h1 {
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-size: 28px;
+	margin-bottom: 45px;
+	text-align: center;
+	color: rgb(0,175,211);
+}
+.vacancies-page__vacancies-block {
+	padding: 50px 0;
+	position: relative;
+	max-width: 1448px;
+	margin: auto;
+	width: 90%;
+	color: #777777;
+}
+.vacancies-page__vacancy-block {
+	width: 45%;
+	float: left;
+	margin-bottom: 50px;
+	text-align: left;
+	padding: 0 33px;
+	overflow: hidden;
+	background-color: #ffffff;
+	border: 0;
+    border-radius: 6px;
+    box-shadow: 0px 3px 38px 0px rgba(0, 0, 0, 0.1);
+	margin-right: 15px;
+}
+
+.vacancies-page__vacancy-header {
+	text-decoration: none;
+	color: rgb(0,175,211);
+	padding-top: 17px;
+	padding-bottom: 0px;
+	display: block;
+	margin: 0;
+	width: 33%;
+	float: left;
+}
+
+.vacancies-page__vacancy-header:hover {
+	color: rgb(252,146,4);
+}
+
+.vacancies-page__vacancy-plaats {
+	color: rgba(0,0,0,0.67);
+	width: 33%;
+	float: left;
+	text-align: left;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+
+.vacancies-page__vacancy-plaats: hover {
+	color: rgb(252,146,4);
+}
+
+.vacancies-page__vacancy-dienstverband {
+	white-space: nowrap;
+	color: #90da36;
+	width: 33%;
+	float: right;
+	text-align: right;
+	padding-top: 17px;
+}
+.vacancies-page__vacancy-introductie {
+	color: rgba(0,0,0,0.67);
+	width: 100%;
+	float: left;
+	text-align: left;
+	padding-top: 0px;
+	padding-bottom: 15px;
+}
+
+/** Vacancy page */
+.vacancy-page__block {
+	width: 100%;
+	margin: auto;
+	padding: 40px 15px 20px;
+}
+
+.vacancy-page__date {
+	text-align: left;
+	font-weight: bold;
+	font-size: 14px;
+	font-style: italic;
+}
+.vacancy-page__custom-fields {
+	text-align: left;
+	padding: 30px 0;
+	padding-bottom: 50px;
+}
+.vacancy-page__custom-fields span {
+	display: inline-block;
+	padding-right: 10px;
+	margin-right: 7px;
+	line-height: 0.9;
+	border-right: 2px solid #4b5963;
+	font-size: 14px;
+	font-weight: 700;
+}
+.vacancy-page__custom-fields span:first-of-type {
+}
+.vacancy-page__custom-fields span:last-of-type {
+	border-right: 0;
+}
+
+.vacancies-page__details-plaats {
+	color: rgb(252,146,4);
+	width: 33%;
+	float: left;
+	text-align: left;
+}
+
+.vacancies-page__details-dienstverband {
+	color: rgb(252,146,4);
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+
+.vacancies-page__details-uren {
+	white-space: nowrap;
+	color: rgb(252,146,4);
+	width: 33%;
+	float: right;
+	text-align: right;
+}
+
+.vacancy-page__content {
+	text-align: justify;
+	padding: 10px 0;
+	margin: 10px 0;
+}
+.vacancy-page__feedback {
+	width: 100%;
+	margin: auto;
+	padding: 0 15px 40px;
+}
+/** Form */
+.vacancy-form {
+	position: relative;
+}
+.vacancy-form p {
+	display: inline-block;
+	width: 50%;
+}
+.vacancy-form p.add-file {
+	width: 49%;
+}
+.vacancy-form p.add-comment {
+	width: 100%;
+}
+.vacancy-form label {
+	font-weight: normal;
+}
+.vacancy-form label span {;;
+}
+.vacancy-form label span.vacancy-form__your-name {
+}
+
+.vacancy-form label input[type=file] {
+}
+.vacancy-form__sf-form {
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.vacancy-form span.required input,
+.vacancy-form span.required ~ .vacancy-form__button {
+	border-color: red;
+}
+.vacancy-page__sidebar p:last-of-type {
+	position: relative;
+}
+.vacancy-form__ajax-loader {
+	display: none;
+	top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-repeat: no-repeat;
+    background-position: center;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' class='lds-spinner' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid' style='background:none'%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.9375s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(22.5 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.875s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(45 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.8125s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(67.5 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.75s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(90 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.6875s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(112.5 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.625s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(135 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.5625s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(157.5 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.5s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(180 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.4375s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(202.5 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.375s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(225 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.3125s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(247.5 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.25s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(270 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.1875s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(292.5 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.125s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(315 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='-0.0625s' repeatCount='indefinite'/%3E%3C/rect%3E%3Crect width='6' height='20' x='47' y='10' fill='%23f83821' rx='9.4' ry='2' transform='rotate(337.5 50 50)'%3E%3Canimate attributeName='opacity' values='1;0' dur='1s' begin='0s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/svg%3E");
+	background-size: 80px;
+}
+.vacancy-form__response-output {
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+
+.vacancy-form p.add-file {
+	width: 100%;	
+}
+
+.vacancy-form__submit {
+	background-color: #a79585 !important;
+    background-image: none !important;
+    color: #fff !important;
+    font-size: 13px !important;
+    height: 40px;
+}
+
+.vacancy-form label input[type=file]	{
+	border: 0px solid #fff !important;
+}
+
+input[type="file"] {
+    padding: 0px !important;
+}
+
+input.vacancy-form__sf-form {
+	border: 15px solid #d2d2d2;
+}
+}
+.vacancy-form__your-letter {
+	border-width: 1px;
+	border-color: #a51f1f;
+	border-style: solid;
+}
+.vacancy-form__your-message {
+}
+input.vacancy-form__sf-form {
+	border: 1px solid #a79585 !important;
+}
+
+
+
+ .tigris-search-form .tigris-search-form-distances {
+    width: 100%;
+    margin: 0px 0;
+    background: none;
+}
+.tigris-filter-form ul {
+	list-style-type: none;
+}
+.tigris-filter-form select {
+	width: 100%;
+    background: none;
+}
+ .tigris-search-form .tigris-search-form-label-find-job {
+ 	position: relative;
+ }
+
+.tigris-search-form-label-find-job .js-autocomplete-result {
+ 	opacity: 0;
+    z-index: 1000;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    right: 0;
+    border: 1px solid #ddd;
+}
+
+.tigris-search-form-label-find-job .js-autocomplete-result.active {
+	opacity: 1;
+}
+
+@media (max-width: 1060px) {
+	
+}
+@media (max-width: 979px) {
+	.vacancies-page__vacancy-block {
+		width: 100%;	
+	}
+	.vacancies-page__vacancy-block:nth-child(odd) {
+	    margin-right: 0;
+	}
+	.vacancies-page__vacancy-block:nth-child(even) {
+	    margin-left: 0;
+	}
+}
+@media (max-width: 767px){
+
+.vacancies-page__vacancy-header {
+	width: 100%;
+}
+
+.vacancy-form p {
+	width: 100%;
+}
+
+.vacancies-page__details-dienstverband, .vacancies-page__details-plaats {
+	width: 100%;
+	padding-bottom: 0px;
+	text-align: left;
+}
+
+.vacancies-page__details-uren {
+	width: 100%;
+	text-align: left;
+	padding-bottom: 17px;
+}
+
+}
+@media (max-width: 480px) {
+	
+}
+
+.tigris-more-vacancies {
+	margin: 30px 0;
+	text-align: right;
+}
+.tigris-more-vacancies a.js-tigris-more-vacancies {
+	border: 1px solid !important;
+	padding: 10px 10px 10px 25px;
+	text-decoration: none;
+}
